@@ -9,6 +9,7 @@ CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
 InteractiveDynamics = "ec714cd0-5f51-11eb-0b6e-452e7367ff84"
 
 [compat]
+InteractiveDynamics = "0.19"
 julia = "1.6"
 
 [extras]
