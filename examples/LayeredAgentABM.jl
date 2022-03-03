@@ -5,6 +5,7 @@ using InteractiveDynamics
 using CairoMakie
 
 include("LayeredAgent.jl")
+include("LayeredAgent2.jl")
 
 function initialise(step_function; numagents=100, seed=250)
     space = GridSpace((20, 20); periodic=false)
@@ -12,7 +13,7 @@ function initialise(step_function; numagents=100, seed=250)
     rng = Random.MersenneTwister(seed)
 
     model = ABM(
-        LayeredAgent, space;
+        [LayeredAgent, LayeredAgent2], space;
         properties, rng
     )
 
@@ -29,3 +30,4 @@ end
 
 model = initialise([move, think])
 
+step!(model, agent_step!)

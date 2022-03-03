@@ -24,7 +24,8 @@ end
 The Physiological Layer for LayeredAgent2
 """
 mutable struct Physiological <: ParamLayer
-
+    hungry::Bool
+end
 
 """
     LayeredAgent2 <: AbstractAgent
