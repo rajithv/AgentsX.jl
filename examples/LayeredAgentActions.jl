@@ -6,7 +6,7 @@ If the agent has a Physiological layer, moving makes them not-hungry.
 """
 function move(agent, model)
     agent.pos = (rand(1:10), rand(1:10))
-    if hasproperty(agent, ::Cognitive)
+    if hasproperty(agent, Cognitive)
         agent.Cognitive.tired = false
     elseif hasproperty(agent, :Physiological)
         agent.Physiological.hungry = false
