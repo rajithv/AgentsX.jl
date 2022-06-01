@@ -10,6 +10,7 @@ InteractiveDynamics = "ec714cd0-5f51-11eb-0b6e-452e7367ff84"
 Mustache = "ffc61752-8dc7-55ee-8c37-f3e9cdd09e70"
 
 [compat]
+Mustache = "1"
 julia = "1.6"
 
 [extras]
